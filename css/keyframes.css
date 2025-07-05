@@ -210,11 +210,10 @@
   }
   #subdiv p{
     font-size: 10px;
-    justify-self:normal;
     text-align: center;
     padding: 10px;
+    margin: 0 auto;
     width: fit-content;
-    margin-left: 20px;
   }
   .subdiv h2{
     font-size: 15px;
@@ -238,7 +237,7 @@
     line-height: 15px;
     color:black;
     line-height: 20px;
-    text-align: center;
+    text-align: justify;
     text-decoration: center;
   }
   .footie{
