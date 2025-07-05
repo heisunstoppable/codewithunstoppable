@@ -111,7 +111,7 @@
     margin-top: 10px;
     max-width: 200px;
     width: 200px;
-    margin-left: 7rem;
+    margin: 0 auto;
   }
   .typed-img img{
     width: 200px;
@@ -145,7 +145,8 @@
     margin: 0 auto;
   }
   .main-con p{
-    width: 85%;
+    width: 90%;
+    text-align: justify;
     margin: 0 auto;
     max-width: 90%;
   }
