@@ -109,6 +109,7 @@ header ul li a:hover{
     padding-top: 1rem;
     font-size:25px;
     line-height: 2rem;
+    text-align: justify;
     font-family: 'Poppins', sans-serif;
 }
 #typed{
@@ -193,6 +194,7 @@ header ul li a:hover{
     padding-top: 20px;
     font-size: larger;
     line-height: 25px;
+    text-align: justify;
 }
 .skill{
     display: flex;
@@ -229,11 +231,11 @@ header ul li a:hover{
     outline: 2px solid white;
 }
 .work-exp{
-    position: relative;
+    /* position: relative; */
     align-items: center;
     justify-self: center;
     color: white;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 4rem 0rem 2rem 0rem;
 }
 .workh1{
@@ -245,12 +247,26 @@ header ul li a:hover{
     width: fit-content;
 }
 .workh2{
-    color:white;
-    font-size: 35px;
-    padding: 10px 0px 0px 0px;
+    color:black;
+    font-size: 25px;
+    padding: 5px 0px 0px 0px;
     width: fit-content;
-    /* text-align: center; */
-    justify-self: center;
+}
+.sub-con{
+    gap: 25px;
+    display: flex;
+}
+.edu{
+    color: black;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin: 10px 0px 30px 20px;
+    align-items: center;
+}
+.edu h3{
+    margin-top: 15px;
+    font-size: medium;
 }
 .sub-work{
     padding: 10px;
@@ -258,6 +274,7 @@ header ul li a:hover{
     border-radius: 15px;
     background-color: rgb(255, 255, 255);
     margin-top: 10px;
+    min-height: 500px ;
 }
 .subdiv{
     padding: 15px;
@@ -295,10 +312,11 @@ header ul li a:hover{
     border-radius: 15px;
 }
 .subdivv p{
-    line-height: 25px;
-    font-size: large;
+    line-height: 20px;
+    font-size: medium;
     color: black;
     margin-top: 10px;
+    text-align: justify;
 }
 .footie{
     color: #000;
