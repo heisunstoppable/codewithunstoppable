@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color:#0f172a;
+    font-family: Arial, sans-serif;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s;
+    padding: 40px 100px;
+    z-index: 10000;
+    height: 5rem;
+}
+header.sticky{
+    padding: 5px 100px;
+    background-color: #fff;
+}
+header.sticky ul li a{
+    color: #000;
+}
+header.sticky a{
+    color: #000;
+}
+header .logo{
+    position: relative;
+    color: white;
+    transition: 0.2s;
+}
+.logo img{
+    position: relative;
+    width: 150px;
+    height: 50px;
+}
+header ul{
+    position: relative;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    position: relative;
+    list-style-type: none;
+}
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 700;
+    transition: 0.2s ease-in;
+    padding: 5px;
+}
+header ul li a:hover{
+    /* border-bottom: 2px solid red; */
+    box-shadow: 2px 2px 5px #4a90e2;
+    padding: 5px;
+    background-color: transparent;
+}
+
+.banner{
+    position: relative;
+    width:100%;
+    display: flex;
+    gap: 250px;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 0 2rem 0;
+}
+.sam{
+    color: white;
+    position: relative;
+    width: 35%;
+    max-width: 900px;
+}
+.sam h2{
+    color: black;
+    /* text-align: center; */
+    background-color: #fff;
+    padding: 0.3rem;
+    border-radius: 5px;
+    margin: 1rem 0rem 0rem 0rem;
+    width: fit-content;
+}
+.sam h1{
+    color: white;
+    font-size: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.sam p{
+    color: #f1f5f9;
+    padding-top: 1rem;
+    font-size:25px;
+    line-height: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+#typed{
+    font-size: 3rem;
+    color: #4a90e2;
+    font-family: "Oleo Script", system-ui;
+}
+.get-in{
+    width: 30%;
+    font-size: 15px;
+    background-color: #4a90e2;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 10px;
+    text-align: center;
+}
+.get-in:hover{
+    outline: 2px solid white;
+}
+
+.banner-img{
+    width: 350px;
+    height: 500px;
+    max-width: 350px;
+    max-height: 500px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px 5px #ffffff;
+}
+.banner-img img{
+    width: 350px;
+    height: 500px;
+    max-width: 350px;
+    max-height: 500px;
+    border-radius: 50%;
+}
+.main{
+    margin-top: 2rem;
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+.main-img{
+    box-shadow: 0 4px 12px rgb(202, 199, 199);
+    max-width: 350px;
+    width: 350px;
+    height: 400px;
+    max-height: 400px;
+    border-radius: 50%;
+}
+.main-img img{
+    max-width: 350px;
+    width: 350px;
+    height: 400px;
+    max-height: 400px;
+    border-radius: 50%;
+}
+.main-con{
+    position: relative;
+    width:50%;
+    max-width: 700px;
+    height: fit-content;
+}
+.main-con h2{
+    width:fit-content;
+    border-radius: 2px;
+    padding: 0.3rem;
+    background-color: white;
+    color: black;
+    font-size: larger;
+}
+.main-con h3{
+    font-size: 40px;
+    color: white;
+    width: fit-content;
+    padding-top: 20px;
+}
+.main-con p{
+    color: white;
+    padding-top: 20px;
+    font-size: larger;
+    line-height: 25px;
+}
+.skill{
+    display: flex;
+    margin-top: 20px;
+    width: fit-content;
+    gap: 25px;
+}
+.skill img{
+    width: 50px;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+.skill img:hover{
+    transform: scale(1.1);
+}
+#touchbtn{
+    margin-top: 15px;
+    background-color: #4a90e2;
+    width: fit-content;
+    padding: 1rem;
+    transition: all 0.2s;
+    border-radius: 50px;
+}
+#touchbtn:hover{
+    outline: 2px solid white;
+}
+#touchbtn a{
+    color: white;
+    text-decoration: none;    
+}
+.hr{
+    width: 100%;
+    margin: auto;
+    outline: 2px solid white;
+}
+.work-exp{
+    position: relative;
+    align-items: center;
+    justify-self: center;
+    color: white;
+    max-width: 900px;
+    margin: 4rem 0rem 2rem 0rem;
+}
+.workh1{
+    padding: 5px;
+    background-color: white;
+    color: black;
+    font-size: large;
+    border-radius: 5px;
+    width: fit-content;
+}
+.workh2{
+    color:white;
+    font-size: 35px;
+    padding: 10px 0px 0px 0px;
+    width: fit-content;
+    /* text-align: center; */
+    justify-self: center;
+}
+.sub-work{
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+.subdiv{
+    padding: 15px;
+    text-align: center;
+    align-items: center;
+    background: #4a90e2;
+    border-radius: 15px;
+}
+.subdiv h2{
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.subdiv h5{
+    margin: 1rem 0;
+    font-size: large;
+}
+.subdiv h4{
+    margin: 1rem 0;
+}
+.subdiv p{
+    padding: 10px;
+    justify-self: center;
+    background-color: white;
+    color: black;
+    text-align: justify;
+    border-radius: 50px;
+}
+.subdivv h1{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: black;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 15px;
+}
+.subdivv p{
+    line-height: 25px;
+    font-size: large;
+    color: black;
+    margin-top: 10px;
+}
+.footie{
+    color: #000;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    font-size: 20px;
+}
+.typed-img{
+    display:none;
+}
+.phone-nav{
+    display: none;
+}
+
