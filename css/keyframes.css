@@ -216,7 +216,7 @@
     text-align: center;
     padding: 10px;
     width: fit-content;
-    margin-left: 20px;
+    margin: 0 auto;
   }
   .subdiv h2{
     font-size: 15px;
