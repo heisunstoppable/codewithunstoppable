@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unstoppable</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="./css/keyframes.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/pop.css">
+    <link rel="stylesheet" href="./css/fontawesome/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./image/logo-talk.png" type="image/x-icon">
+</head>
+<body>
+    <header class="hidden-on-load">
+        <a href="#" class="logo"><img src="./image/logo-talk.png" alt="logo" class=""></a>
+        <ul class="nav-link">
+            <li><a href="#" class="nav-a" onclick="getElementById('banner').scrollIntoView({behavior:'smooth'})">Home</a></li>
+            <li><a href="#" class="nav-a" onclick="getElementById('main').scrollIntoView({behavior:'smooth'})">About me</a></li>
+            <li><a href="#" class="nav-a" onclick="getElementById('recent').scrollIntoView({behavior:'smooth'})">projects</a></li>
+            <li><a href="#" class="nav-a" onclick="getElementById('work-exp').scrollIntoView({behavior:'smooth'})">services</a></li>
+            <li onclick="getElementById('form-section').scrollIntoView({behavior:'smooth'})"><a href="#" class="nav-a">Contact</a></li>
+        </ul>
+    </header>
+    
+    <div class="phone-nav hidden-on-load">
+        <a href=""><img src="./image/logo-talk.png" alt=""></a>
+        <div class="dropdown">
+            <button class="dropdown-button"><i class="fa-solid fa-bars"></i></button>
+            <div class="items">
+                <a href="#" onclick="getElementById('banner').scrollIntoView({behavior:'smooth'})">Home</a>
+                <a href="#" onclick="getElementById('main').scrollIntoView({behavior:'smooth'})">About me</a>
+                <a href="#" onclick="getElementById('recent').scrollIntoView({behavior:'smooth'})">projects</a>
+                <a href="#" onclick="getElementById('work-exp').scrollIntoView({behavior:'smooth'})">Services</a>
+                <a href="#" onclick="getElementById('form-section').scrollIntoView({behavior:'smooth'})">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="banner hidden-on-load" id="banner">
+        <div class="sam" id="sam">
+            <h2 >TEMITOPE SAMUEL AYENI</h2>
+            <h1>HAY! I'M UNSTOPPABLE</h1>
+            <span id="typed"></span>
+            <figure class="typed-img" id="typed-img"><img src="./image/pic2.png" alt=""></figure>
+            <p>
+                Hi, I'm Unstoppable, a passionate Web Developer with a knack
+                for turning ideas into fast, responsive, and user-friendly websites. I specialize in building sleek front-end interfaces, crafting seamless user experiences, and bringing digital visions to life through code. Whether it’s a landing page, a custom web app, or a complete site overhaul, I build with performance, accessibility, and creativity in mind. <br> <span style="color: bisque;">Let’s code the future—one pixel at a time.</span>
+            </p>
+            <h4 class="get-in" id="get-in" onclick="getElementById('form-section').scrollIntoView({behavior:'smooth'})">
+                GET IN TOUCH
+            </h4>
+        </div>
+        <figure class="banner-img">
+            <img src="./image/myselfcopy2.png" alt="">
+        </figure>
+    </section>
+    <hr class="hr">
+
+    <main class="main hidden-on-load" id="main">
+        <div class="main-img"><img src="./image/web-dev.png" alt=""></div>
+        <div class="main-con">
+            <h2 >ABOUT ME</h2>
+            <h3>I AM AVAILABLE FOR YOUR <br> WEB DEVELOPMENT/DESIGN JOBS</h3>
+            <p>
+                We are passionate front-end developers with a strong eye for design and a deep appreciation for clean, efficient code. Our work bridges the gap between beautiful design and seamless  functionality, ensuring every interface we build is intuitive, responsive, and user-friendly. We focus on delivering dynamic and engaging user experiences. With a solid foundation in HTML, CSS, JavaScript, and component-based architecture, we thrive in crafting scalable web solutions that not only look great but perform flawlessly across devices.
+            </p>
+            <div class="skill">
+                <figure><img src="./image/HTML5_Logo_512.png" alt="HTML5"></figure>
+                <figure><img src="./image/CSS-Logo-2011.png" alt="css"></figure>
+                <figure><img src="./image/JavaScript-Symbol.png" alt="JavaScript"></figure>
+                <figure><img src="./image/Tailwind_CSS_Logo.png" alt="React"></figure>
+                <figure><img src="./image/React.png" alt="React"></figure>
+            </div>
+        </div>
+    </main>
+
+    <!-- image slider section -->
+    <section class="swiper hidden-on-load" id="swiper">
+        <p id="recent" class="recent">MY RECENT <span style="color: #4a90e2;">PROJECTS</span></p>
+        <div class="swiper-button-prev btn" id="btn"></div>
+        <div class="swiper-wrapper" id="wrapperswap">
+            <div class="swiper-slide" id="swiper-slide">
+                <img src="./image/project1.png" onclick="openLightbox(this.src)">
+                <h1>Web Design</h1>
+                <p>Click to view full Image <span class="arrow-right"><i class="fa-solid fa-circle-arrow-right"></i></span></p>
+            </div>
+            <div class="swiper-slide" id="swiper-slide">
+                <img src="./image/prject2.png" onclick="openLightbox(this.src)">
+                <h1>Web Design</h1>
+                <p>Click to view full Image <span class="arrow-right"><i class="fa-solid fa-circle-arrow-right"></i></span></p>
+            </div>
+            <div class="swiper-slide" id="swiper-slide">
+                <img src="./image/project3.png" onclick="openLightbox(this.src)">
+                <h1>Web Design</h1>
+                <p>Click to view full Image <span class="arrow-right"><i class="fa-solid fa-circle-arrow-right"></i></span></p>
+            </div>
+            <div class="swiper-slide" id="swiper-slide">
+                <img src="./image/project4.png" onclick="openLightbox(this.src)">
+                <h1>Web Design</h1>
+                <p>Click to view full Image <span class="arrow-right"><i class="fa-solid fa-circle-arrow-right"></i></span></p>
+            </div>
+            <div class="swiper-slide" id="swiper-slide">
+                <img src="./image/project3.png" onclick="openLightbox(this.src)">
+                <h1>Web Design</h1>
+                <p>Click to view full Image <span class="arrow-right"><i class="fa-solid fa-circle-arrow-right"></i></span></p>
+            </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next btn" id="btn"></div>   
+    </section>
+
+    <!-- lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">×</span>
+        <img id="lightbox-img" src="" />
+    </div>
+
+    <!-- article session -->
+    <article class="work-exp hidden-on-load" id="work-exp">
+        <h1 class="workh1" style="display:none;">EXPERIENCE</h1>
+        <h1 class="workh2">MY WORK <span style="color: #4a90e2;">EXPERIENCE</span></h1>
+        <div class="sub-work">
+            <div class="subdiv" id="subdiv">
+                <h2>Front-End Developer</h2>
+                <h5>Remote Worker</h5>
+                <h4>Jan 2023 - Present</h4>
+                <p>PART-TIME/FULL-TIME</p>
+            </div>
+            <div class="subdivv">
+                <!-- <h1>What we do</h1> -->
+                <p>
+                    At <span style="color:#4a90e2;">#codewithunstoppable,</span> we're passionate about transforming ideas into visually stunning and user-focused digital experiences. As a front-end specialist, I work alongside a creative and results-driven team that combines modern design principles with robust, responsive code to build seamless web interfaces that not only look good but work perfectly across all devices. We believe that great front-end development is about more than just code, it's about storytelling, performance, accessibility, and putting users first. From pixel-perfect layouts to fluid animations and mobile-first design, we obsess over the details that make digital experiences unforgettable. Whether you're a startup looking to launch, a brand in need of a revamp, or a business scaling fast, we bring your vision to life with clean, scalable, and interactive interfaces tailored for your audience.  
+                </p>
+            </div>
+        </div>
+        </div>
+    </article>
+    <hr class="hr">
+    <section class="form-section hidden-on-load" id="form-section">
+        <h6>Let’s Discuss Your <span style="color: #4a90e2;">Project</span></h6>
+        <p class="free" id="free">Always available for freelancing if the right project comes along, Feel free to contact me.</p>
+        <div class="body-con" id="body-con">
+            <div class="contact-form" id="contact-form">
+                <h2>Contact Us</h2>
+                <form id="contactForm" novalidate>
+                    <div class="form-group" id="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required />
+                        <p class="error-message" id="nameError">Name is required</p>
+                    </div>
+                    <div class="form-group" id="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required />
+                        <p class="error-message" id="emailError">Enter a valid email</p>
+                    </div>
+                    <div class="form-group" id="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        <p class="error-message" id="messageError">Message is required</p>
+                    </div>
+                    <button type="submit" id="btn-send">Send Message</button>
+                    <p class="success-message" id="successMessage">Message sent successfully!</p>
+                </form>
+            </div>
+            <ul class="media" id="media">
+                <li><a href="https://twitter.com/unstoppableszn" target="_blank" title="x (formerly Twitter)"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/codewithunstoppable" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://wa.me/+2348061145542" target="_blank"><i class="fa-brands fa-whatsapp" title="WhatsApp"></i></a></li>
+                <li><a href="https://github.com/heisunstoppable" target="_blank"><i class="fa-brands fa-github" title="GitHub"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/unstoppableszn" target="_blank"><i class="fa-brands fa-linkedin" title="linkedin"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footie hidden-on-load">
+        &copy; 2025 #codewithunstoppable 🖤 <span style="color: #4a90e2;">unstoppable.jony@gmail.com</span>
+    </footer>
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/web.js"></script>
+</body>
+</html>
