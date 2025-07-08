@@ -107,3 +107,12 @@ const form = document.getElementById('contactForm');
     });
   });
   document.querySelectorAll('.hidden-on-load').forEach(el => observer.observe(el));
+
+
+  // preloader javascript
+  window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    preloader.style.opacity = '0';
+    preloader.style.pointerEvents = 'none';
+    setTimeout(() => preloader.style.display = 'none', 1000);
+  });
