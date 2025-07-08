@@ -114,5 +114,5 @@ const form = document.getElementById('contactForm');
     const preloader = document.getElementById('preloader');
     preloader.style.opacity = '0';
     preloader.style.pointerEvents = 'none';
-    setTimeout(() => preloader.style.display = 'none', 1000);
+    setTimeout(() => preloader.style.display = 'none', 100);
   });
