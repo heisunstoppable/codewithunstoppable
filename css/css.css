@@ -216,7 +216,6 @@ header ul li a:hover{
     cursor: pointer;
     text-align: center;
     padding: 20px;
-    margin: 0 auto;
     border-radius: 15PX;
     border: 2px solid gray;
     transition: all .5s;
@@ -224,14 +223,17 @@ header ul li a:hover{
 .acq-skill1 img{
     width: 50px;
     height: 50px;
+    margin: 0 auto;
     min-height: 50px;
 }
 .acq-skill1 p{
     margin-top: 10px;
+    margin: 0 auto;
     margin-bottom: 10px;
 }
 .acq-skill1 h5{
     width: 80%;
+    margin: 0 auto;
     padding: 15px;
     border-radius: 15px;
     background-color: #4a90e2;
