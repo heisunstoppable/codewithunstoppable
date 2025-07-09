@@ -48,7 +48,6 @@ header .logo{
 header ul{
     position: relative;
     display: flex;
-    gap: 25px;
     justify-content: center;
     align-items: center;
 }
@@ -65,12 +64,12 @@ header ul li a{
     letter-spacing: 2px;
     font-weight: 700;
     transition: 0.2s ease-in;
-    padding: 5px;
+    padding: 10px;
 }
 header ul li a:hover{
-    /* border-bottom: 2px solid red; */
     box-shadow: 2px 2px 5px #4a90e2;
-    padding: 5px;
+    padding: 10px;
+    border-radius: 15px;
     background-color: transparent;
 }
 
@@ -153,6 +152,7 @@ header ul li a:hover{
     gap: 5rem;
     justify-content: center;
     align-items: center;
+    margin-bottom: 35px;
 }
 .main-img{
     box-shadow: 0 4px 12px rgb(202, 199, 199);
@@ -196,34 +196,54 @@ header ul li a:hover{
     line-height: 25px;
     text-align: justify;
 }
-.skill{
-    display: flex;
-    margin-top: 20px;
-    width: fit-content;
-    gap: 25px;
-}
-.skill img{
-    width: 50px;
-    cursor: pointer;
-    transition: .2s ease-in;
-}
-.skill img:hover{
-    transform: scale(1.1);
-}
-#touchbtn{
-    margin-top: 15px;
-    background-color: #4a90e2;
-    width: fit-content;
-    padding: 1rem;
-    transition: all 0.2s;
-    border-radius: 50px;
-}
-#touchbtn:hover{
-    outline: 2px solid white;
-}
-#touchbtn a{
+.myskills{
+    text-align: center;
     color: white;
-    text-decoration: none;    
+    margin: 0 auto;
+    width: 50%;
+}
+.myskills h1{
+    font-size: 35px;
+    padding-bottom: 35px;
+}
+.acq-skill{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    gap: 16px;
+}
+.acq-skill1{
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+    border-radius: 15PX;
+    border: 2px solid gray;
+    transition: all .5s;
+}
+.acq-skill1 img{
+    width: 50px;
+    height: 50px;
+    min-height: 50px;
+}
+.acq-skill1 p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.acq-skill1 h5{
+    width: 80%;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #4a90e2;
+    transition: .5s;
+}
+.acq-skill1:hover{
+    border: 2px solid white;
+}
+.acq-skill1:hover .skill-per{
+    background-color: white;
+    color: black;
 }
 .hr{
     width: 100%;
