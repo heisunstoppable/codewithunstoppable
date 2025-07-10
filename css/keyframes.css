@@ -98,7 +98,6 @@
   }
   #typed{
     font-size: 25px;
-    padding-bottom:10px;
   }
   .sam p{
     font-size: medium;
@@ -109,13 +108,13 @@
   }
   .typed-img{
     display: block;
-    margin-top: 10px;
     max-width: 200px;
     width: 200px;
     margin: 0 auto;
   }
   .typed-img img{
     width: 200px;
+    margin-top: 10px;
     max-width: 200px;
   }
   #get-in{
