@@ -116,3 +116,14 @@ const form = document.getElementById('contactForm');
     preloader.style.pointerEvents = 'none';
     setTimeout(() => preloader.style.display = 'none', 500);
   });
+
+// what client says js section
+let index = 0;
+  const testimonials = document.querySelectorAll('.testimonial');
+
+  function showNextTestimonial() {
+    testimonials.forEach((t) => t.classList.remove('active'));
+    testimonials[index].classList.add('active');
+    index = (index + 1) % testimonials.length;
+  }
+  setInterval(showNextTestimonial, 3000); // Every 3 seconds
