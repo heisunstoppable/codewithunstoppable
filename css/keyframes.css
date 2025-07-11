@@ -367,4 +367,7 @@
   #media li a{
     font-size: 35px;
   }
+  .testimonials h2{
+    font-size: 1.5rem;
+  }
 }
