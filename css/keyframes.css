@@ -8,7 +8,16 @@
   opacity: 1;
   transform: translateY(0);
 }
-
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* phone media query */
 @media(max-width: 768px), (max-width: 1024px ){
   header{
