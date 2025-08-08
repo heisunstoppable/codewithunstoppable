@@ -199,6 +199,7 @@ header ul li a:hover{
 .myskills{
     text-align: center;
     color: white;
+    margin-top: 20px;
     margin: 0 auto;
     width: 50%;
 }
@@ -405,4 +406,5 @@ header ul li a:hover{
     margin-bottom: 5px;
     border-radius: 50%;
 }
+
 
