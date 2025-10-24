@@ -9,35 +9,6 @@ new Typed("#typed", {
     loop: true
 });
 
-const swiper = new Swiper('.swiper', {
-    slidesPerView: 4,
-    spaceBetween: 15,
-    loop: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-      0: { slidesPerView: 1 },
-      600: { slidesPerView: 2 },
-      900: { slidesPerView: 3 },
-      1200: { slidesPerView: 4 },
-    },
-    pagination: {
-    el: '.swiper-pagination',
-  },
-});
-function openLightbox(src) {
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightbox-img');
-  lightboxImg.src = src;
-  lightbox.style.display = 'flex';
-}
-
-function closeLightbox() {
-  document.getElementById('lightbox').style.display = 'none';
-}
-
 //contact form script//
 
 const form = document.getElementById('contactForm');
