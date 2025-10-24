@@ -194,15 +194,16 @@
     display: grid;
     grid-template-columns: auto auto;
     width: fit-content;
-    padding: 10px;
-    margin: auto;
   }
   #card-con{
-    width: 150px;
+    width: 170px;
     height: 250px;
     border-radius:10px ;
-    /* display: flex; */
     overflow: hidden;
+  }
+
+  #recentsec{
+    padding: 5px;
   }
 
 
@@ -377,3 +378,4 @@
     margin-bottom: 1rem;
   }
 }
+
