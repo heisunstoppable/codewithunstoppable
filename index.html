@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/keyframes.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/pop.css">
-    <link rel="stylesheet" href="./css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./image/logo-talk.png" type="image/x-icon">
 </head>
@@ -43,28 +43,34 @@
             <h2 >TEMITOPE SAMUEL AYENI</h2>
             <h1>HAY! I'M UNSTOPPABLE</h1>
             <span id="typed"></span>
-            <figure class="typed-img" id="typed-img"><img src="./image/pic2.png" alt=""></figure>
+            <figure class="typed-img" id="typed-img"><img src="./image/workmode.jpg" alt=""></figure>
             <p>
                 Hi, I'm Unstoppable, a passionate Web Developer with a knack
-                for turning ideas into fast, responsive, and user-friendly websites. I specialize in building sleek front-end interfaces, crafting seamless user experiences, and bringing digital visions to life through code. Whether it’s a landing page, a custom web app, or a complete site overhaul, I build with performance, accessibility, and creativity in mind. <br> <span style="color: bisque;">Let’s code the future—one pixel at a time.</span>
+                for turning ideas into fast, responsive, and user-friendly websites. I specialize in building sleek front-end interfaces, crafting seamless user experiences, and bringing digital visions to life through code. Whether it’s a landing page, a custom web app, or a complete site overhaul, I build with performance, accessibility, and creativity in mind. <br> <span style="color: bisque;">Let’s code the future; one pixel at a time.</span>
             </p>
             <h4 class="get-in" id="get-in" onclick="getElementById('form-section').scrollIntoView({behavior:'smooth'})">
                 GET IN TOUCH
             </h4>
         </div>
-        <figure class="banner-img">
+
+        <div class="displaypic">
+            <img src="./image/workmode.jpg" alt="">
+
+        </div>
+
+        <!-- <figure class="banner-img">
             <img src="./image/myselfcopy2.png" alt="">
-        </figure>
+        </figure> -->
     </section>
     <hr class="hr">
 
     <main class="main hidden-on-load" id="main">
         <div class="main-img"><img src="./image/web-dev.png" alt=""></div>
         <div class="main-con">
-            <h2 >ABOUT ME</h2>
+            <!-- <h2 >ABOUT ME</h2> -->
             <h3>I AM AVAILABLE FOR YOUR <br> WEB DEVELOPMENT/DESIGN JOBS</h3>
             <p>
-                We are passionate front-end developers with a strong eye for design and a deep appreciation for clean, efficient code. Our work bridges the gap between beautiful design and seamless  functionality, ensuring every interface we build is intuitive, responsive, and user-friendly. We focus on delivering dynamic and engaging user experiences. With a solid foundation in HTML, CSS, JavaScript, and component-based architecture, we thrive in crafting scalable web solutions that not only look great but perform flawlessly across devices.
+                I am a passionate Front-End Developer with a strong eye for design and a deep appreciation for clean, efficient code. My work bridges the gap between beautiful design and seamless functionality, ensuring every interface I build is intuitive, responsive, and user-friendly. I focus on delivering dynamic and engaging user experiences. With a solid foundation in HTML, CSS, JavaScript, and component-based architecture, thrive in crafting scalable web solutions that not only look great but perform flawlessly across devices.
             </p>
         </div>
     </main>
@@ -84,12 +90,12 @@
             <div class="acq-skill1">
                 <img src="./image/JavaScript-Symbol.png" alt="JavaScript">
                 <p>JAVASCRIPT</p>
-                <h5 class="skill-per">55%</h5>
+                <h5 class="skill-per">65%</h5>
             </div>
             <div class="acq-skill1">
                 <img src="./image/Tailwind_CSS_Logo.png" alt="TAILWIND">
                 <p>TAILWIND CSS</p>
-                <h5 class="skill-per">75%</h5>
+                <h5 class="skill-per">80%</h5>
             </div>
             <div class="acq-skill1">
                 <img src="./image/React.png" alt="REACT">
@@ -99,47 +105,49 @@
         </div>
     </section>
 
-    <!-- image slider section -->
-    <section class="swiper hidden-on-load" id="swiper">
+    <!-- My recent Jobs section -->
+    <section class="hidden-on-load recentsec">
         <p id="recent" class="recent">MY RECENT <span style="color: #4a90e2;">PROJECTS</span></p>
-        <div class="swiper-button-prev btn" id="btn"></div>
-        <div class="swiper-wrapper" id="wrapperswap">
-            <div class="swiper-slide" id="swiper-slide">
-                <img src="./image/project1.png" onclick="openLightbox(this.src)">
-                <h1>Web Design</h1>
-                <p>Click to view full Image <span class="arrow-right"><i class="fa-solid fa-circle-arrow-right"></i></span></p>
+
+        <div class="card-main" id="card-main">
+            <div class="card-con" id="card-con">
+                <a href="https://mission-literacy.vercel.app/" class="card-text" target="_blank">
+                    <img src="./image/job1.jpg" alt="" class="card-img">
+                </a>
             </div>
-            <div class="swiper-slide" id="swiper-slide">
-                <img src="./image/prject2.png" onclick="openLightbox(this.src)">
-                <h1>Web Design</h1>
-                <p>Click to view full Image <span class="arrow-right"><i class="fa-solid fa-circle-arrow-right"></i></span></p>
+            <div class="card-con" id="card-con">
+                <a href="https://mission-literacy.vercel.app/" class="card-text" target="_blank">
+                    <img src="./image/job1.jpg" alt="" class="card-img">
+                </a>
             </div>
-            <div class="swiper-slide" id="swiper-slide">
-                <img src="./image/project3.png" onclick="openLightbox(this.src)">
-                <h1>Web Design</h1>
-                <p>Click to view full Image <span class="arrow-right"><i class="fa-solid fa-circle-arrow-right"></i></span></p>
+            <div class="card-con" id="card-con">
+                <a href="https://mission-literacy.vercel.app/" class="card-text" target="_blank">
+                    <img src="./image/job1.jpg" alt="" class="card-img">
+                </a>
             </div>
-            <div class="swiper-slide" id="swiper-slide">
-                <img src="./image/project4.png" onclick="openLightbox(this.src)">
-                <h1>Web Design</h1>
-                <p>Click to view full Image <span class="arrow-right"><i class="fa-solid fa-circle-arrow-right"></i></span></p>
+            <div class="card-con" id="card-con">
+                <a href="https://speringappcom.vercel.app/" class="card-text" target="_blank">
+                    <img src="./image/job2.jpg" alt="" class="card-img">
+                </a>
             </div>
-            <div class="swiper-slide" id="swiper-slide">
-                <img src="./image/project3.png" onclick="openLightbox(this.src)">
-                <h1>Web Design</h1>
-                <p>Click to view full Image <span class="arrow-right"><i class="fa-solid fa-circle-arrow-right"></i></span></p>
+            <div class="card-con" id="card-con">
+                <a href="https://speringappcom.vercel.app/" class="card-text" target="_blank">
+                    <img src="./image/job2.jpg" alt="" class="card-img">
+                </a>
+            </div>
+            <div class="card-con" id="card-con">
+                <a href="https://speringappcom.vercel.app/" class="card-text" target="_blank">
+                    <img src="./image/job2.jpg" alt="" class="card-img">
+                </a>
             </div>
 
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next btn" id="btn"></div>   
+
+
+        </div>
+
     </section>
 
-    <!-- lightbox -->
-    <div class="lightbox" id="lightbox">
-        <span class="lightbox-close" onclick="closeLightbox()">×</span>
-        <img id="lightbox-img" src="" />
-    </div>
 
     <!-- article session -->
     <article class="work-exp hidden-on-load" id="work-exp">
